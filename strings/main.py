@@ -46,3 +46,5 @@ chant = ((first_name + '!') + ' ') * goal_2
 
 print(2 != 3)
 print(2 != 2)
+print (chant)
+print (spelers_NL+[spelers_NL_nr])
