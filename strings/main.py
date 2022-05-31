@@ -40,11 +40,16 @@ last_name_len = len(player[player.find(' ')+1:])
 name_short = player[:1] + '. ' + player[7:]
 goal_0 = 32
 goal_1 = 54
-goal_2 = len(first_name)
+goal_2 = len(first_name) -2
 
-chant = ((first_name + '!') + ' ') * goal_2
+chant = first_name + '!' + ' ' +((first_name + '! ') * goal_2) +  first_name +'!'
+chant2 = len(chant[:chant.find('!')])
+chant3 = chant2 * goal_2
+good_chant = chant != 'Gerard! Gerard! Gerard! Gerard! Gerard! Gerard! '
 
 print(2 != 3)
 print(2 != 2)
 print (chant)
+print (chant2)
+print (chant3)
 print (spelers_NL+[spelers_NL_nr])
