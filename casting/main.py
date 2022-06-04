@@ -31,7 +31,7 @@ price_broccoli = 2.34
 order_amount = 'broccoli 1.6'
 #02 Compute the total price for this order.
 order_amount2 = order_amount[order_amount.find(' ')+1:]
-order_amount_kilo = int(order_amount2)
+order_amount_kilo = order_amount2
 total_price_broccoli = price_broccoli * order_amount_kilo
 #03 Use the +-operator to assemble and print a string that looks like the following:
 output_string_casting = (order_amount_kilo+'kg broccoli cost '+ total_price_broccoli)
