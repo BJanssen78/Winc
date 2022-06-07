@@ -41,5 +41,23 @@ print('\n\n')
 
 answer = 42
 qa = f'The answer is.. {answer}'
-qa2 = (qa + answer)
 qa3 = (qa and answer)
+
+print('\n\n')
+
+#functions
+def double(x):
+    doubled_x = x * 2
+    return doubled_x
+
+four_doubled = double(4)
+print(four_doubled)
+
+def initials(name):
+    first = name[0].upper()
+    last = name[name.find(' ')+1].upper()
+    return f'{first}. {last}.'
+
+initials('Ex Ample')
+initials('Bob Cat')
+initials('Function Nice')
