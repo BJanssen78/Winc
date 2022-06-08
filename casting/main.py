@@ -14,5 +14,6 @@ sum_total = amount_leek * leek_price
 
 broccoli_price = 2.34
 order_broccoli = 'broccoli 1.6'
-amount_broccoli = (order_broccoli[order_broccoli.find(' ')+1:])
-sum_broccoli_total = amount_broccoli * broccoli_price
+amount_broccoli = float(order_broccoli[order_broccoli.find(' ')+1:])
+sum_broccoli_total = round((amount_broccoli * broccoli_price),2)
+
