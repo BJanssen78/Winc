@@ -28,8 +28,8 @@ match = positive(2)
 match2 = positive(-1)
 
 def negative(number):
-    is_positive = number < 0
-    return is_positive
+    is_negative = number < 0
+    return is_negative
 
 match3 = negative(2)
 match4 = negative(-1)
