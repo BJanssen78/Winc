@@ -1,5 +1,9 @@
 from sre_constants import JUMP
 
+two = "Piano"[0:0]
+twoo = "" + "Guitar" [0:0]
+
+rek1 = 2**(3+3)-2*11
 
 output = '''dit moet een multiline zijn,
 dit zou dus "gewoon" moeten werken.
