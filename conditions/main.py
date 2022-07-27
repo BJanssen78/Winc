@@ -20,16 +20,16 @@ def farm_action(weather,time_of_day,cow_milking_status,location,season,slurry_ta
     action = ''
     if (weather == 'rainy' or time_of_day == 'night') and location == 'pasture':
         action += 'Take cows to cowshed\n'
-    if cow_milking_status == True and location == 'cowshed':
-        action += 'milk cows\n'
-    if (weather != 'sunny' or weather != 'windy') and location == 'cowshed' and slurry_tank == True:
-        action += 'fertilize pasture\n'
-    if weather == 'sunny' and season == 'spring' and grass_status == True and location != 'pasture':
-        action += 'mow grass'
-        return (action)
-    #if action != '': #extra controle
-        #print('\[action is not empty\n',action +'\]') #extra toevoeging om te zien of wincpy nu werkt.
-        #return(action)
+        if cow_milking_status == True and location == 'cowshed':
+            action += 'milk cows\n'
+            if (weather != 'sunny' or weather != 'windy') and location == 'cowshed' and slurry_tank == True:
+                action += 'fertilize pasture\n'
+                if weather == 'sunny' and season == 'spring' and grass_status == True and location != 'pasture':
+                    action += 'mow grass'
+                    return (action)
+    # if action != '': #extra controle
+    #     print('\[action is not empty\n',action +'\]') #extra toevoeging om te zien of wincpy nu werkt.
+    #     return(action)
     else:
         action = 'wait'
         return (action)
