@@ -33,3 +33,5 @@ def negative(number):
 
 match3 = negative(2)
 match4 = negative(-1)
+print(match3)
+print(match4)
